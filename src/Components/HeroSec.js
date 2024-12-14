@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import Typed from 'typed.js';
 
+  
 function HeroSec() {
+  const element = useRef(null); 
+
+  useEffect(() => {
+    const typed = new Typed(element.current, {
+      strings: [
+        'a Full-Stack Developer',
+        'Currently Trainee At Orange Coding Academy',
+      ],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="home" id="home">
     <div className="home-content">
       <h3>Hello, It's Me</h3>
       <h1>Shadi Alnkhatin</h1>
-      <h3>
-        And I'm a <span className="multiple-text"></span>
+      <h3 className='multiple-text-heading'>
+        And I'm  <span className="multiple-text"ref={element}></span>
       </h3>
       <div className="social-media">
         {/* GitHub */}
@@ -36,6 +57,11 @@ function HeroSec() {
       <a href="#contact" className="btn">
         Let's Contact
       </a>
+      <button className="btn mx-3">
+        <a href="/shadi-cv.pdf" download="Shadi_Alnkhatin_CV.pdf">
+                Download CV
+        </a>
+      </button>
     </div>
   </section>
   

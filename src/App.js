@@ -12,10 +12,12 @@ import WorkSec from './Components/WorkSec';
 import TestimonialsSec from './Components/TestimonialsSec';
 import HighlightSec from './Components/HighlightSec';
 import Footer from './Components/Footer';
+import useScrollReveal from './useScrollReveal';
 
 
 
 function App() {
+  useScrollReveal();
   return (
       <>
       <Nav/>

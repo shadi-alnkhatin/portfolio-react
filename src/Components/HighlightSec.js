@@ -1,48 +1,66 @@
-import React from 'react'
+import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function HighlightSec() {
+  const highlights = [
+    {
+      icon: 'fas fa-lightbulb',
+      title: 'Creative Problem Solver',
+      description:
+        'I approach challenges with creativity, thinking outside the box to find unique solutions for design and development problems.',
+    },
+    {
+      icon: 'bx bxs-tim',
+      title: 'Efficient Time Management',
+      description:
+        'I prioritize tasks effectively, ensuring deadlines are met while maintaining high-quality standards.',
+    },
+    {
+      icon: 'bx bxs-grou',
+      title: 'Team Player',
+      description:
+        'I collaborate effectively in team environments, contributing to shared goals and ensuring project success.',
+    },
+    {
+      icon: 'bx bx-cod',
+      title: 'Technical Expertise',
+      description:
+        'With expertise in both frontend and backend technologies, I build robust and scalable applications.',
+    },
+  ];
+
+  var settings = {
+    dots: true, 
+   infinite: true, 
+  slidesToShow: 1, 
+  slidesToScroll: 1, 
+  autoplay: true,
+  autoplaySpeed: 3000, 
+  speed: 1000, 
+  cssEase: "linear", 
+  };
+
   return (
-    <section className="highlight section" id="highlight">
-            <h2 className="heading">Why Work <span>with Me?</span></h2>
-            <div id="carouselExampleControls" className="carousel slide highlight-carousel" data-ride="carousel">
-                <div className="carousel-inner">
-                    {/* <!-- First Slide --> */}
-                    <div className="carousel-item active">
-                        {/* <img src="https://media.istockphoto.com/id/1184802478/vector/abstract-blurred-background-defocused-blue-gradient.jpg?s=612x612&w=0&k=20&c=F-Ulisq_XFsix3-KE0DJvfFZ49Z5yq4CnzanL_TTmo0=" className="highlight__img d-block w-100" alt=""> */}
-                        <div className="carousel-caption d-md-block highlight__box">
-                            <i className="fas fa-lightbulb highlight__icon"></i>
-                            <h3 className="highlight__title">Creative Problem Solver</h3>
-                            <p className="highlight__description">
-                                I approach challenges with creativity, thinking outside the box to find unique solutions for design and development problems.
-                            </p>
-                        </div>
-                    </div>
-                    {/* <!-- Second Slide --> */}
-                    <div className="carousel-item">
-                        {/* <img src="https://media.istockphoto.com/id/1184802478/vector/abstract-blurred-background-defocused-blue-gradient.jpg?s=612x612&w=0&k=20&c=F-Ulisq_XFsix3-KE0DJvfFZ49Z5yq4CnzanL_TTmo0=" className="highlight__img d-block w-100" alt=""> */}
-                        <div className="carousel-caption d-md-block highlight__box">
-                            <i className="fas fa-hourglass-half highlight__icon"></i>
-                            <h3 className="highlight__title">Time Management</h3>
-                            <p className="highlight__description">
-                                With solid time-management skills, I consistently meet deadlines and ensure the project moves forward smoothly.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                {/* <!-- Carousel Controls --> */}
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only"></span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only"></span>
-                </a>
+    <section className=" highlight " id="">
+      <h2 className="heading">
+        Why Work <span>With Me?</span>
+      </h2>
+      <div className="">
+        <Slider {...settings}>
+          {highlights.map((highlight, index) => (
+            <div className="highlight-card" key={index}>
+              <i className={`highlight-icon ${highlight.icon}`}></i>
+              <h3 className="highlight-title">{highlight.title}</h3>
+              <p className="highlight-description">{highlight.description}</p>
             </div>
-        
+          ))}
+        </Slider>
+      </div>
     </section>
-  )
+  );
 }
 
-export default HighlightSec
+export default HighlightSec;
