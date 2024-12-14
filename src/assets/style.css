@@ -710,7 +710,7 @@
  
  /* Testimonial Card */
  .testimonial__card {
-   background-color: #fff;
+   background-color: var(--bg-color);
    border-radius: 10px;
    padding: 30px;
    width: 100%;
@@ -727,7 +727,7 @@
  
  .testimonial__text {
    font-size: 1.8rem;
-   color: #666;
+   color: #999;
    margin-bottom: 15px;
    line-height: 1.6;
  }
@@ -736,7 +736,7 @@
    font-size: 1.8rem;
    font-weight: bold;
    margin-bottom: 5px;
-   color: #333;
+   color: #fff;
  }
  
  .testimonial__position {

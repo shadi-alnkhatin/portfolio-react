@@ -4,7 +4,7 @@ function AboutSec() {
   return (
     <section className="about" id="about">
             <div className="about-img">
-                <img src={`${process.env.PUBLIC_URL}/img/developer.webp`} alt=""/>
+                <img src={`${process.env.PUBLIC_URL}/img/developer.png`} alt=""/>
             </div>
             <div className="about-content">
                 <h2 className="heading">About<span>Me</span></h2>
