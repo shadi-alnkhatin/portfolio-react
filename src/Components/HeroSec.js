@@ -58,7 +58,7 @@ function HeroSec() {
         Let's Contact
       </a>
       <button className="btn mx-3">
-        <a href="/shadi-cv.pdf" download="Shadi_Alnkhatin_CV.pdf">
+        <a href={`${process.env.PUBLIC_URL}/shadi-cv.pdf`} download="Shadi_Alnkhatin_CV.pdf">
                 Download CV
         </a>
       </button>

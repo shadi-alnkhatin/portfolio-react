@@ -22,7 +22,7 @@ function WorkSec() {
         <Slider {...settings}>
           {/* Project 1 */}
           <div className="work__card">
-            <img src="/img/goMovies.png" alt="GoMovies" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/goMovies.png`} alt="GoMovies" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">GoMovies</h3>
               <p className="work__description">
@@ -36,7 +36,7 @@ function WorkSec() {
 
           {/* Project 2 */}
           <div className="work__card">
-            <img src="/img/fitZoon.png" alt="FitZoon" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/fitZoon.png`} alt="FitZoon" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">FitZoon</h3>
               <p className="work__description">
@@ -48,7 +48,7 @@ function WorkSec() {
             </div>
           </div>
           <div className="work__card">
-            <img src="/img/chatty.jpg" alt="chatty" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/chatty.jpg`} alt="chatty" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">Chatty</h3>
               <p className="work__description">
@@ -60,7 +60,7 @@ function WorkSec() {
           </div>
 
           <div className="work__card">
-            <img src="/img/MovieMAze.png" alt="MovieMaze" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/movieMaze.png`} alt="MovieMaze" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">MovieMaze</h3>
               <p className="work__description">
@@ -71,7 +71,7 @@ function WorkSec() {
             </div>
           </div>
           <div className="work__card">
-            <img src="/img/eventSys.jpg" alt="MovieMaze" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/eventSys.jpg`} alt="Events Project" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">EVENTS</h3>
               <p className="work__description">
@@ -82,7 +82,7 @@ function WorkSec() {
             </div>
           </div>
           <div className="work__card">
-            <img src="/img/coming.jpg" alt="MovieMaze" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/coming.jpg`} alt="QR Menu System" className="work__img" />
             <div className="work__details">
               <h3 className="work__title">QR Menu System (SAAS) </h3>
               <p className="work__description">

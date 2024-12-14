@@ -76,8 +76,8 @@ function Contact() {
         <div className="input-box">
           <input
             type="tel"
-            required
-            placeholder="0788136963"
+            
+            placeholder="0788136963 (optional)"
             name="Mobile"
           />
           <input

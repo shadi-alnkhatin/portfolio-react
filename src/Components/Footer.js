@@ -7,7 +7,7 @@ function Footer() {
                 <p>Copyright &copy; 2024 by SHADI </p>
             </div>
             <div className="footer-iconTop">
-                <a href="#home"><i className='bx bx-up-arrow-alt' ></i></a>
+                <a href="#home" style={{textDecoration:'none'}}><i className='bx bx-up-arrow-alt' ></i></a>
             </div>
     </footer>
   )

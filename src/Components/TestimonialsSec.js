@@ -8,7 +8,7 @@ function TestimonialsSec() {
     <div className="testimonials__container">
   <div className="testimonial__card">
   <div className="testimonial_info">
-        <img src="/img/hamza.jpg" alt=""/>
+        <img src={`${process.env.PUBLIC_URL}/img/hamza.jpg`} alt=""/>
         <h3 className="testimonial__author">Hamza Zamil</h3>
       </div>
     <div className="testimonial__content">
@@ -21,7 +21,7 @@ function TestimonialsSec() {
 
   <div className="testimonial__card">
   <div className="testimonial_info">
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/man-user-circle-black-icon.png" alt=""/>
+        <img src={`${process.env.PUBLIC_URL}/img/sami.png`} alt=""/>
         <h3 className="testimonial__author">Sami Yassin</h3>
       </div>
     <div className="testimonial__content">
@@ -34,7 +34,7 @@ function TestimonialsSec() {
 
   <div className="testimonial__card">
   <div className="testimonial_info">
-        <img src="/img/Azzam.jpg" alt=""/>
+        <img src={`${process.env.PUBLIC_URL}/img/Azzam.jpg`} alt=""/>
         <h3 className="testimonial__author">Ahmad Azzam</h3>
       </div>
     <div className="testimonial__content">
