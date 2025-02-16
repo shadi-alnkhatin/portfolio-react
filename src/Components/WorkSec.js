@@ -82,9 +82,9 @@ function WorkSec() {
             </div>
           </div>
           <div className="work__card">
-            <img src={`${process.env.PUBLIC_URL}/img/coming.jpg`} alt="QR Menu System" className="work__img" />
+            <img src={`${process.env.PUBLIC_URL}/img/quick-menu.png`} alt="QR Menu System" className="work__img" />
             <div className="work__details">
-              <h3 className="work__title">QR Menu System (SAAS) </h3>
+              <h3 className="work__title">QR Menu System (PAAS) </h3>
               <p className="work__description">
                 Technologies: HTML5, CSS3, blade ,Laravel,MySQL.<br/>
                 Developed a dynamic QR-based menu system for restaurants, enabling customers to view menus, place orders, and streamline operations using Laravel and Livewire.

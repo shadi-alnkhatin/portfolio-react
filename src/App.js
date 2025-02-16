@@ -26,7 +26,6 @@ function App() {
       <SkillsSec/>
       <ServicesSec/>
       <WorkSec/>
-      <TestimonialsSec/>
       <HighlightSec/>
       <Contact/>
       <Footer/>

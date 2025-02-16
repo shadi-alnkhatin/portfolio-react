@@ -276,7 +276,7 @@
  }
 
 
-.services{
+.services, .highlight{
    background: var(--second-bg-color);
 }
  .services h2{
