@@ -46,7 +46,6 @@ function Nav() {
                 <a href="#skills"onClick={toggleMenu}>SKILLS</a>
                 <a href="#services"onClick={toggleMenu}>SERVICES</a>
                 <a href="#work"onClick={toggleMenu}>PROJECTS</a>
-                <a href="#testimonials"onClick={toggleMenu}>TESTIMONIALS</a>
                 <a href="#contact"onClick={toggleMenu}>CONTACT</a>
             </nav>
     </header>
