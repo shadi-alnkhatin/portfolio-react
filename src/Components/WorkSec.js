@@ -17,7 +17,7 @@ function WorkSec() {
 
   return (
     <section className="work" id="work">
-      <h2 className="heading">Latest<span>Project</span></h2>
+      <h2 className="heading">Latest<span>Projects</span></h2>
       <div className="work__container">
         <Slider {...settings}>
           {/* Project 1 */}
@@ -90,6 +90,18 @@ function WorkSec() {
                 Developed a dynamic QR-based menu system for restaurants, enabling customers to view menus, place orders, and streamline operations using Laravel and Livewire.
               </p>
               <a href="https://github.com/shadi-alnkhatin/QuickMenu-laravel" target="_blank" rel="noopener noreferrer" className="work__link">View on GitHub</a>
+            </div>
+          </div>
+
+          <div className="work__card">
+            <img src={`${process.env.PUBLIC_URL}/img/studentSys.png`} alt="Student System" className="work__img" />
+            <div className="work__details">
+              <h3 className="work__title">Student management System </h3>
+              <p className="work__description">
+                Technologies: HTML5, CSS3, Jquery, blade,Laravel,MySQL.<br/>
+                Developed a web-based application that allows administrators to manage students, courses, and lessons efficiently. It includes features for assigning courses, setting marks, activating accounts, and real-time communication between admins and students using Pusher.js.
+              </p>
+              <a href="https://github.com/shadi-alnkhatin/Studnet-Management" target="_blank" rel="noopener noreferrer" className="work__link">View on GitHub</a>
             </div>
           </div>
         </Slider>
