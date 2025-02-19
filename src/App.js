@@ -29,7 +29,6 @@ function App() {
       <HighlightSec/>
       <Contact/>
       <Footer/>
-
       </>
   );
 }
